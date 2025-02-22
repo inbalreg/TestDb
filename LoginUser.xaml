@@ -1,0 +1,18 @@
+﻿<Page x:Class="TestDb.LoginUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestDb"
+        mc:Ignorable="d"
+        Title="LoginUser" Height="450" Width="800">
+    <Grid>
+
+        <TextBlock Text="Login to the Application" Margin="20" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <TextBox x:Name="UserNameTextBox" Width="200" Height="25" Margin="0,115,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <PasswordBox x:Name="PasswordBox" Width="200" Height="25" Margin="0,163,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <!--PlaceholderText="Password"-->
+
+        <Button x:Name="LoginButton" Content="Login" Width="200" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center" Click="LoginButton_Click"/>
+    </Grid>
+</Page>

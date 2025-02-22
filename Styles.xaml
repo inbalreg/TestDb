@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="ButtonExStyle" >
+        <Setter Property="Control.Width" Value="100"></Setter>
+        <Setter Property="Control.Height" Value="50"></Setter>
+        <Setter Property="Control.FontSize" Value="25"></Setter>
+        <Setter Property="Control.Background" Value="Chocolate"/>
+    </Style>
+
+
+</ResourceDictionary>

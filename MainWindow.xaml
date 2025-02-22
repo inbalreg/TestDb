@@ -1,0 +1,22 @@
+﻿<Window x:Class="TestDb.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:HamburgerMenu="clr-namespace:HamburgerMenu;assembly=HamburgerMenu"
+        xmlns:local="clr-namespace:TestDb"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" x:Name="this_">
+    <Grid>
+    <Frame Source="LoginUser.xaml">
+     
+    </Frame>
+<HamburgerMenu:HamburgerMenu  Background="Blue" MenuIconColor="White" SelectionIndicatorColor="White" MenuItemForeground="White" HorizontalAlignment="Left">
+            <HamburgerMenu:HamburgerMenuItem Icon="Images/home.png" Text="Home" />
+            <HamburgerMenu:HamburgerMenuItem Icon="Images/search.png" Text="Search" Selected="HamburgerMenuItem_Selected_1" />
+            <HamburgerMenu:HamburgerMenuItem Icon="Images/favorite.png" Text="Likes" MouseDown="HamburgerMenuItem_MouseDown" Selected="HamburgerMenuItem_Selected"/>
+            <HamburgerMenu:HamburgerMenuItem Icon="Images/list.png" Text="Lists" />
+            <HamburgerMenu:HamburgerMenuItem Icon="Images/person.png" Text="Profile"/>
+            </HamburgerMenu:HamburgerMenu>
+    </Grid>
+</Window>

@@ -1,0 +1,56 @@
+﻿<Window x:Class="TestDb.UpdatePerson"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestDb"
+        mc:Ignorable="d"
+        Title="UpdatePerson" Height="450" Width="800">
+     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Update Person: " FontSize="40" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <!--Button x:Name="SearchButton" Content="Search" Width="200" Height="30" Margin="100,60,100,0" VerticalAlignment="Top" HorizontalAlignment="Center" Click="SearchButton_Click"/-->
+
+        <TextBlock Text="First Name: " FontSize="30" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <TextBox x:Name="FirstNameTextBox" Width="250" FontSize="30" Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Text="First Name"/>
+        <TextBlock Text="Last Name: " FontSize="30" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" />
+
+        <TextBox x:Name="LastNameTextBox" Width="250" FontSize="30" Grid.Row="2" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Text="Last Name"/>
+        <TextBlock Text="Address: " FontSize="30" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" />
+
+        <TextBox x:Name="AddressTextBox" Width="250" FontSize="30" Grid.Row="3" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Text="Address"/>
+        <TextBlock Text="Phone number: " FontSize="30" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" />
+
+        <TextBox x:Name="PhoneNumTextBox" Width="250" FontSize="30" Grid.Row="4" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Text="Phone Number"/>
+        <TextBlock Text="Age: " FontSize="30" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" />
+
+        <TextBox x:Name="AgeTextBox" Width="250" FontSize="30" Grid.Row="5" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Text="Age"/>
+        <TextBlock Text="Birth Date: " FontSize="30" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" />
+
+        <DatePicker x:Name="BirthDatePicker" Width="250" FontSize="30" Grid.Row="6" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <TextBlock Text="City: " FontSize="30" Grid.Row="7" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <ComboBox x:Name="CityComboBox" FontSize="30" ItemsSource="{Binding Cities}" DisplayMemberPath="CityName" SelectedValuePath="ID" Grid.Row="7" Grid.Column="1" Width="250" SelectedIndex="1"/>
+        <!--TextBox x:Name="CityTextBox" Width="250" FontSize="30" Grid.Row="7" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Text="City"/-->
+        <!--TextBox x:Name="PasswordTextBox" Width="200" Height="25" Margin="100,180,100,0" VerticalAlignment="Top" HorizontalAlignment="Center" Text="Password"/-->
+        <TextBlock Text="Username: " FontSize="30" Grid.Row="8" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" />
+
+        <TextBox x:Name="UserNameTextBox" Width="250" FontSize="30" Grid.Row="8" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Text="Username"/>
+        <Button x:Name="UpdateButton" FontSize="30" Content="Update Person" Grid.Row="9" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" Click="UpdateButton_Click" Margin="0, 3, 20, 3"/>
+        <Button x:Name="CancelButton" FontSize="30" Content="Cancel" Grid.Row="9" Grid.Column="1"  VerticalAlignment="Center" HorizontalAlignment="Left" Click="CancelButton_Click" Margin="20, 3, 0, 3"/>
+    </Grid>
+</Window>
