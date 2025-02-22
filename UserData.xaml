@@ -50,6 +50,6 @@
             <TextBlock Text="Username: " FontSize="30" Grid.Row="8" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" />
 
             <TextBox x:Name="UserNameTextBox" Width="250" FontSize="30" Grid.Row="8" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Text="Username"/>
-
-        </Grid>
+        <TextBlock Text="Check" Grid.Row="9"/>
+    </Grid>
 </UserControl>
